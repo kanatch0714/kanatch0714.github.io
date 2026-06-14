@@ -27,7 +27,7 @@
                 .then(text => {const diary = text.split(';')
                     console.log(diary)
                     const data = []
-                    for (let i = 0;i<diary.length;i++) {
+                    for (let i = 0;i<diary.length-1;i++) {
                         data.push(diary[i].split('/'))
                     }
                     console.log(data)
