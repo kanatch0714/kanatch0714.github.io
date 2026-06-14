@@ -1,0 +1,35 @@
+body{background-color:#151414;}
+h1{
+    color:aliceblue;
+    display:flex;
+    justify-content: center;
+}
+
+.site-header{
+    background-color:darkslategray;
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+a{
+    color:aliceblue;
+    padding: 7px;
+}
+
+.card{
+    background-color:#1e293b;
+    padding: 20px;
+    border: 2px solid darkslategray;
+    border-radius: 4px;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+.card-title{
+    color:aliceblue;
+    line-height: 0.2;
+    font-weight:normal
+}
+
+.card-passage{color:aliceblue}

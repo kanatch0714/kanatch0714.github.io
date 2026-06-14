@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ログ</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="header-nav">
+                <a href="index.html">ホーム</a>
+                <a href="profile.html">プロフィール</a>
+                <a href="works.html">作品</a>
+                <a href="log.html">ログ</a>
+                <a href="en/index.html">EN</a>
+            </nav>
+        </header>
+        <h1>ログ</h1>
+
+        <div class="card">
+            <h2 class="card-title"></h2>
+            <p id="log" class="card-passage">ログの内容</p>
+        </div>
+        <script>
+            fetch('logs.md')
+                .then(response => response.text())
+                .then(text => {const diary = text.split(';')
+                    console.log(diary)
+                })
+        </script>
+
+    </body>
+
+</html>
