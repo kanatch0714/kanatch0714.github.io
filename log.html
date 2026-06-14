@@ -16,22 +16,27 @@
         </header>
         <h1>ログ</h1>
 
-        <div class="card">
-            <h2 class="card-title"></h2>
-            <p id="log" class="card-passage">ログの内容</p>
-        </div>
+        <!--ここから！-->
+        <div id="log-container"></div>
 
         <script>
             fetch('logs.md')
                 .then(response => response.text())
-                .then(text => {const diary = text.split(';')
+                .then(text => {
+                    const container = document.getElementById('log-container');
+                    const diary = text.split(';')
                     console.log(diary)
                     const data = []
                     for (let i = 0;i<diary.length-1;i++) {
                         data.push(diary[i].split('/'))
+                        const cardHTML = `
+                            <div class="card"></div>
+                        `
+                        container.innerHTML += cardHTML;
                     }
                     console.log(data)
                 })
+
         </script>
 
     </body>
