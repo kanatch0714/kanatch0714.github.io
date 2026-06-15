@@ -34,4 +34,7 @@ a{
 
 .card-passage{color:aliceblue}
 
-log-date{color:gray}
+log-date{color:aliceblue;
+        font-style:italic}
+log-sentence{color:aliceblue}
+log-status{color:aliceblue}
