@@ -25,11 +25,11 @@
                 .then(text => {
                     const container = document.getElementById('log-container');
                     const diary = text.split(';')
-                    console.log(diary)
-                    let data = []
+                    console.log(`diary:${diary}`)
                     for (let i = 0;i<diary.length-1;i++) {
                         let data = []
                         data.push(diary[i].split('/'))
+                        console.log(`data:${data}`)
                         const cardHTML = `
                             <div class="card">
                                 <p class="log-date">${data[0]}</p>
@@ -37,7 +37,7 @@
                         `
                         container.innerHTML += cardHTML;
                     }
-                    console.log(data)
+                    
                 })
 
         </script>
